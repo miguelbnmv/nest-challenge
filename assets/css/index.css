@@ -1,0 +1,227 @@
+main {
+  display: flex;
+}
+
+.content {
+  padding-top: 5rem;
+}
+
+/* Review Sector */
+#reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 45vw;
+  height: 100vh;
+  background: rgb(19,58,133);
+  background: linear-gradient(17deg, rgba(19,58,133,1) 0%, rgba(7,179,228,1) 100%);
+}
+
+#dots {
+  position: absolute;
+  left: 19rem;
+  top: 18rem;
+  width: 10rem;
+  height: auto;
+ }
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 22vw;
+  height: 22rem;
+  padding: 2rem;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -0.5px;
+}
+
+.rating img {
+  width: 16px;
+  height: auto;
+}
+
+.reviewer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+.reviewer img {
+  width: 3rem;
+  height: auto;
+  padding-right: 1rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+}
+
+.btn {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  background-color: var(--color-lightblue);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hover:hover {
+  background: linear-gradient(17deg, rgba(19,58,133,1) 0%, rgba(7,179,228,1) 100%);
+}
+
+.btn:first-child {
+  margin-right: .5rem;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.numbers {
+  margin-top: 3rem;
+  color: white;
+  font-weight: 100;
+  line-height: 1.72;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.logos img:first-child {
+  margin-right: 1rem;
+}
+
+.logos img {
+  width: 7vw;
+  height: auto;
+  min-width: 100px;
+}
+
+/* Signup Sector */
+#signup {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   width: 65vw;
+   height: 100vh;
+}
+
+#signup img {
+  width: 8rem;
+  height: auto;
+}
+
+form {
+  width: 35vw;
+  margin-block-end: 0;
+}
+
+input {
+  display: flex;
+  justify-content:space-around;
+  box-sizing: border-box;
+  width: 100%;
+  height: 3rem;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid var(--color-lightgrey);
+  margin-bottom: 2rem;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.input_icon {
+  width: 100%;
+  position: relative;
+  color: var(--color-blue);
+  display: inline-block;
+}
+
+.input_icon i {
+  position: absolute;
+  top: 10px;
+  left: auto;
+  right: 10px;
+}
+
+input[type=text]:focus:valid, input[type=password]:focus:valid, input[type=email]:focus:valid {
+  border-bottom: 1px solid var(--color-green);
+}
+
+input[type=text]:focus:invalid, input[type=password]:focus:invalid, input[type=email]:focus:invalid {
+  border-bottom: 1px solid var(--color-red);
+}
+
+input[type=submit] {
+  width: 100%;
+  height: 3.5rem;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  color: var(--color-white);
+  background: var(--color-lightblue);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+input[type=submit]:hover {
+  background: linear-gradient(17deg, rgba(19,58,133,1) 0%, rgba(7,179,228,1) 100%);
+}
+
+::placeholder {
+  color: var(--color-bluetext);
+}
+
+.terms {
+  margin: 2rem 0 4rem 0;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    padding: 3rem;
+  }
+
+  #reviews {
+    width: 100vw;
+    height: 90%;
+    order: 2;
+  }
+
+  .card {
+    width: 50vw;
+  }
+
+  #signup {
+    width: 100vw;
+  }
+
+  form {
+    width: 100%;
+  }
+}

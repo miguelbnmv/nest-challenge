@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>Storetasker</title>
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,500i,600,600i,700,700i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800" rel="stylesheet">
+    <link href="assets/css/base.css" rel="stylesheet"/>
+    <link href="assets/css/vars.css" rel="stylesheet"/>
+    <link href="assets/css/index.css" rel="stylesheet"/>
+    <script src="assets/js/review.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/43c8ebd4ce.js"></script>
+  </head>
+  <body>
+    <main>
+      <section id="reviews">
+        <div class="content">
+          <div class="card">
+            <div class="rating">
+              <img src="assets/img/star.png" alt="Star">
+              <img src="assets/img/star.png" alt="Star">
+              <img src="assets/img/star.png" alt="Star">
+              <img src="assets/img/star.png" alt="Star">
+              <img src="assets/img/star.png" alt="Star">
+            </div>
+            <p id="review_text">
+              Storetasker delivered on time, within budget and went above and beyond to make my app a sucess...
+            </p>
+            <div class="reviewer">
+              <img id="reviewer_photo" src="assets/img/review0.png" alt="Reviewer Photo">
+              <div>
+                <p id="name">Natalie Hernandez</p>
+                <h5 id="role">CEO @ Stocksy</h5>
+              </div>
+            </div>
+            <img src="assets/img/dots.png" id="dots" alt="Dots">
+          </div>
+          <div class="buttons">
+            <button id="buttonBack" class="btn hover"><i class="fas fa-long-arrow-alt-left"></i></button>
+            <button id="buttonFoward" class="btn hover"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </div>
+          <div class="numbers">
+            <p><span style="font-weight:bold">4190 jobs</span> completed successfully with</p>
+            <p><span style="font-weight:bold">97.4%</span> 5 stars reviews</p>
+          </div>
+          <div class="logos">
+            <img src="assets/img/shopify.png" alt="Shopify">
+            <img src="assets/img/shopifyplus.png" alt="Shopify Plus">
+          </div>
+        </div>
+      </section>
+      <section id="signup">
+        <div class="content">
+          <img src="assets/img/storetasker.png" alt="Storetasker">
+          <h1>Create Your Free Account</h1>
+          <h4>Already have an account? <a href="https://id.storetasker.com/login" target="_blank">Log in</a></h4>
+          <form action="http://www.nestcollective.co/">
+            <h5>Full Name</h5>
+            <div class="input_icon">
+              <i class="far fa-user-circle icon"></i>
+              <input id="username" pattern="[A-Za-z]{1,}" required type="text" placeholder="James O'Conell">
+            </div>
+            <h5>Email Address</h5>
+            <div class="input_icon">
+              <i class="fa fa-at icon"></i>
+              <input id="email" type="email" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" required placeholder="james.conell@gmail.com">
+            </div>
+            <h5>Business URL</h5>
+            <div class="input_icon">
+              <i class="fas fa-external-link-alt icon"></i>
+              <input id="url" type="text" required placeholder="shopify.com/">
+            </div>
+            <h5>Password</h5>
+            <div class="input_icon">
+              <i class="fa fa-lock icon"></i>
+              <input id="password" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="*********">
+            </div>
+            <input type="submit" value="Create Account">
+          </form>
+          <div class="terms">
+            <h4>By signing up, you are agreeing to <a href="https://www.termsfeed.com/blog/wp-content/uploads/2019/04/terms-and-conditions-template.pdf" target="_blank"> Storetasker's</br>Term & Conditions</a></h4>
+          </div>
+          <div>
+            <h5>@2018 All Rights Reserved. Storetasker® Ltd.</h5>
+            <h5>Cookies Preferences, Privacy. and Terms</h5>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
