@@ -44,9 +44,3 @@ h5 {
 input[type=submit]:hover {
   cursor: pointer;
 }
-
-.center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
